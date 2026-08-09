@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arjun Dongare — Data Science × Full-Stack Development</title>
+<meta name="description" content="Portfolio of Arjun Baban Dongare — IT Engineering student working across data science, GenAI analytics, and full-stack development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="glow"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="logo">arjun<span>.</span><span class="dev">dev</span></a>
+    <div class="nav-right">
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <canvas id="particles"></canvas>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="prompt-line mono">$ whoami<span class="caret"></span></div>
+        <h1>Arjun Baban<br>Dongare</h1>
+        <div class="role">
+          <span class="tag-data">Data Science</span> <span style="color:var(--text-muted);">×</span> <span class="tag-dev">Full-Stack Development</span>
+        </div>
+        <p class="lede">IT Engineering student who moves comfortably between analyzing a dataset and shipping the application around it — from EDA and GenAI-powered insight work to secure, architected web systems.</p>
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="mailto:smartarjun045@gmail.com" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Chembur, Maharashtra, India</span>
+          <a href="mailto:smartarjun045@gmail.com">smartarjun045@gmail.com</a>
+          <a href="tel:+917620675207">+91 76206 75207</a>
+          <a href="https://github.com/smartarjun045" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener" id="linkedinLink">LinkedIn</a>
+        </div>
+      </div>
+      <div class="profile-tilt">
+        <div class="profile-card">
+          <div class="profile-inner">
+            <img src="assets/profile.png" alt="Arjun Baban Dongare">
+            <div class="profile-glare"></div>
+          </div>
+          <div class="profile-badge"><b class="data">DATA</b><span style="color:var(--border);">|</span><b class="dev">DEV</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="split-bar"></div>
+</header>
+
+<section id="about">
+  <div class="wrap reveal">
+    <div class="eyebrow">01 — About</div>
+    <div class="about-grid">
+      <div>
+        <p>I'm an Information Technology engineering student at Theem College of Engineering (University of Mumbai), building hands-on experience across the analytics-to-application pipeline. On the data side, that means cleaning and exploring datasets, applying GenAI techniques to real business problems, and telling the story behind the numbers with Tableau and Power BI.</p>
+        <p>On the development side, it means writing tested, securely-architected code, understanding cloud hosting on AWS, and picking up embedded systems fundamentals along the way. I like projects that need both halves — a model that also needs a dashboard, a dataset that also needs an app.</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-row"><span class="k">Based in</span><span class="v">Chembur, Mumbai, IN</span></div>
+        <div class="fact-row"><span class="k">Studying</span><span class="v">B.E. Information Technology</span></div>
+        <div class="fact-row"><span class="k">College</span><span class="v">Theem College of Engg.</span></div>
+        <div class="fact-row"><span class="k">Focus</span><span class="v">Data Science + GenAI</span></div>
+        <div class="fact-row"><span class="k">Focus</span><span class="v">Full-Stack + Cloud</span></div>
+        <div class="fact-row"><span class="k">Open to</span><span class="v">Internships / Entry roles</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap reveal">
+    <div class="eyebrow">02 — Skills</div>
+    <div class="section-head"><h2>What I work with</h2><span class="count mono">hover a skill for details</span></div>
+    <div class="skill-groups">
+      <div class="skill-card data">
+        <h3><span class="dot dot-data"></span> Data & Analytics</h3>
+        <div class="chip-row">
+          <span class="chip">Python<span class="tip">Data wrangling, automation scripts, and ML prototyping — my main language for analysis work.</span></span>
+          <span class="chip">SQL<span class="tip">Writing joins, aggregations, and analytical queries to pull insight out of relational data.</span></span>
+          <span class="chip">Excel<span class="tip">Fast data cleaning, pivot tables, and exploratory checks before deeper analysis.</span></span>
+          <span class="chip">Tableau<span class="tip">Building interactive dashboards that turn raw datasets into readable trends.</span></span>
+          <span class="chip">Power BI<span class="tip">Business intelligence reporting and stakeholder-facing dashboards.</span></span>
+          <span class="chip">EDA<span class="tip">Exploratory Data Analysis — profiling datasets and spotting patterns before modeling.</span></span>
+          <span class="chip">GenAI Tools<span class="tip">Applying LLMs and generative techniques to analytics and business problems.</span></span>
+          <span class="chip">Data Visualization<span class="tip">Turning numbers into charts and stories stakeholders can actually act on.</span></span>
+        </div>
+      </div>
+      <div class="skill-card dev">
+        <h3><span class="dot dot-dev"></span> Development & Cloud</h3>
+        <div class="chip-row">
+          <span class="chip">HTML<span class="tip">Structuring semantic, accessible page content.</span></span>
+          <span class="chip">CSS<span class="tip">Responsive layouts, animation, and styling systems like this one.</span></span>
+          <span class="chip">Python<span class="tip">Backend logic and scripting for full-stack apps like Flask dashboards.</span></span>
+          <span class="chip">SQL<span class="tip">Schema design and queries behind application data layers.</span></span>
+          <span class="chip">Data Structures<span class="tip">Arrays, trees, graphs — the fundamentals behind efficient code.</span></span>
+          <span class="chip">Software Architecture<span class="tip">Designing scalable, maintainable system structures.</span></span>
+          <span class="chip">AWS Basics<span class="tip">Designing simple, scalable hosting architecture in the cloud.</span></span>
+          <span class="chip">Embedded Systems<span class="tip">Programming microcontrollers and IoT devices at the hardware level.</span></span>
+          <span class="chip">Testing<span class="tip">Writing test cases to catch issues before they ship.</span></span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="dot dot-core"></span> Working Style</h3>
+        <div class="chip-row">
+          <span class="chip">Agile<span class="tip">Planning and delivering work in iterative sprints.</span></span>
+          <span class="chip">Team Work<span class="tip">Collaborating well inside cross-functional simulation teams.</span></span>
+          <span class="chip">Adaptability<span class="tip">Comfortable switching between data and dev contexts quickly.</span></span>
+          <span class="chip">Time Management<span class="tip">Balancing coursework, certifications, and simulations in parallel.</span></span>
+          <span class="chip">Business Storytelling<span class="tip">Translating analytical findings into decisions stakeholders can use.</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap reveal">
+    <div class="eyebrow">03 — Experience</div>
+    <div class="section-head"><h2>Where I've worked</h2><span class="count mono">8 roles · legend: <span style="color:var(--data);">●</span> data &nbsp;<span style="color:var(--dev);">●</span> dev</span></div>
+    <div class="timeline">
+
+      <div class="t-item">
+        <div class="t-dot data"></div>
+        <div class="t-head"><h3>Virtual Data Science with Python — Trainee</h3><span class="t-date">Jul '26 · 6 weeks</span></div>
+        <div class="t-org">YuvaIntern (Remote) <span class="badge data">DATA</span></div>
+        <ul>
+          <li>Explored data analysis and visualization techniques in Python on real-world datasets under mentor guidance</li>
+          <li>Practiced cleaning, manipulating, and analyzing data to build a working foundation in data wrangling</li>
+          <li>Built visual data stories using Python-based visualization tools through project-based assignments</li>
+        </ul>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot data"></div>
+        <div class="t-head"><h3>Virtual Data Science with Python — Apprentice Intern</h3><span class="t-date">Jul '26 · 5 weeks</span></div>
+        <div class="t-org">YuvaIntern (Remote) <span class="badge data">DATA</span></div>
+        <ul>
+          <li>Supported a data science team on tasks spanning data collection, cleaning, and analysis using Python</li>
+          <li>Assisted in developing and implementing machine learning models as part of applied project work</li>
+          <li>Gained early hands-on exposure to end-to-end data science workflows</li>
+        </ul>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot dev"></div>
+        <div class="t-head"><h3>Embedded Systems Internship</h3><span class="t-date">Jun '26 · 4 weeks</span></div>
+        <div class="t-org">Emertxe Information Technologies, Bangalore (Remote) <span class="badge dev">DEV</span></div>
+        <ul>
+          <li>Completed a structured online internship focused on core embedded systems programming</li>
+          <li>Built foundational skills across embedded systems, electronics, and IoT domains</li>
+        </ul>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot data"></div>
+        <div class="t-head"><h3>GenAI Powered Data Analytics Job Simulation</h3><span class="t-date">Jul '25</span></div>
+        <div class="t-org">Tata Group (via Forage) <span class="badge data">DATA</span></div>
+        <ul>
+          <li>Conducted exploratory data analysis and risk profiling on a simulated lending portfolio</li>
+          <li>Applied GenAI techniques to predict delinquency risk within the dataset</li>
+          <li>Authored a business report translating findings into a data-driven collections strategy</li>
+        </ul>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot dev"></div>
+        <div class="t-head"><h3>Software Engineering Job Simulation</h3><span class="t-date">Jul '25</span></div>
+        <div class="t-org">Accenture (via Forage) <span class="badge dev">DEV</span></div>
+        <ul>
+          <li>Practiced software architecture design and secure coding principles on simulated engineering tasks</li>
+          <li>Wrote and tested programming solutions following industry-standard practices</li>
+          <li>Applied Agile methodology to plan, prioritize, and deliver simulated development work</li>
+        </ul>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot dev"></div>
+        <div class="t-head"><h3>Solutions Architecture Job Simulation</h3><span class="t-date">Jul '25</span></div>
+        <div class="t-org">AWS (via Forage) <span class="badge dev">DEV</span></div>
+        <ul>
+          <li>Designed a simple, scalable hosting architecture for a simulated client use case</li>
+          <li>Applied core cloud architecture principles to a real-world hosting scenario</li>
+        </ul>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot dev"></div>
+        <div class="t-head"><h3>Technology Job Simulation</h3><span class="t-date">Jul '25</span></div>
+        <div class="t-org">Deloitte Australia (via Forage) <span class="badge dev">DEV</span></div>
+        <ul>
+          <li>Completed a job simulation covering software coding and development practices</li>
+          <li>Authored a proposal outlining a dashboard solution as a client-style deliverable</li>
+        </ul>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot data"></div>
+        <div class="t-head"><h3>Data Analytics Job Simulation</h3><span class="t-date">Jun '25 – Jul '25</span></div>
+        <div class="t-org">Deloitte Australia (via Forage) <span class="badge data">DATA</span></div>
+        <ul>
+          <li>Completed a job simulation covering data analysis and forensic technology techniques</li>
+          <li>Built a data dashboard in Tableau to visualize key findings</li>
+          <li>Used Excel to classify data and draw supportable business conclusions</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap reveal">
+    <div class="eyebrow">04 — Projects</div>
+    <div class="section-head"><h2>Things I've built</h2><span class="count mono">from github.com/smartarjun045</span></div>
+    <div class="proj-grid">
+
+      <div class="proj-card">
+        <div class="proj-top"><h3>Sign Language → Text & Speech</h3><span class="badge dev">CV / DEV</span></div>
+        <p>A Python desktop application for real-time American Sign Language fingerspelling recognition, combining computer vision with deep learning to translate hand signs into text and speech.</p>
+        <div class="proj-foot"><span>Python</span><a class="proj-link" href="https://github.com/smartarjun045/Sign-Language-To-Text-and-Speech-Conversion" target="_blank" rel="noopener">View repo →</a></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><h3>UPI Fraud Detection</h3><span class="badge data">DATA / ML</span></div>
+        <p>A machine learning project aimed at detecting fraudulent UPI transactions, working through feature engineering and model evaluation on transaction data.</p>
+        <div class="proj-foot"><span>HTML · ML</span><a class="proj-link" href="https://github.com/smartarjun045/UPI-Fraud-Detection-Using-Machine-Learning" target="_blank" rel="noopener">View repo →</a></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><h3>Stock Price Prediction Platform</h3><span class="badge data">DATA / FULLSTACK</span></div>
+        <p>A Flask-based dashboard for stock price prediction with multi-ticker analytics, NLP-driven sentiment analysis, user authentication, and portfolio tracking.</p>
+        <div class="proj-foot"><span>Python · Flask</span><a class="proj-link" href="https://github.com/smartarjun045/STOCK_PRICE_PREDICTION" target="_blank" rel="noopener">View repo →</a></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><h3>Life Insurance ChatBot</h3><span class="badge dev">DEV</span></div>
+        <p>A conversational chatbot interface built to help users navigate life insurance queries and information.</p>
+        <div class="proj-foot"><span>HTML</span><a class="proj-link" href="https://github.com/smartarjun045/life-Insurance-ChatBot" target="_blank" rel="noopener">View repo →</a></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top"><h3>Northpeak Digital</h3><span class="badge dev">DEV</span></div>
+        <p>A web development project focused on front-end build and layout work.</p>
+        <div class="proj-foot"><span>HTML</span><a class="proj-link" href="https://github.com/smartarjun045/northpeak-digital" target="_blank" rel="noopener">View repo →</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap reveal">
+    <div class="eyebrow">05 — Certifications</div>
+    <div class="section-head"><h2>Courses & simulations</h2><span class="count mono">click a card to view the certificate</span></div>
+    <div class="cert-scroller-wrap">
+      <div class="cert-scroller" id="certScroller">
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-dse.png">
+          <div class="cert-icon data">📊</div>
+          <h4>Data Science Essentials</h4>
+          <div class="cert-issuer">Reliance Foundation Skilling Academy</div>
+          <div class="cert-date">🗓 May 2026 · 240 hrs</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-dsfe.png">
+          <div class="cert-icon data">🧮</div>
+          <h4>Data Science for Everyone</h4>
+          <div class="cert-issuer">Reliance Foundation Skilling Academy</div>
+          <div class="cert-date">🗓 May 2026 · 180 hrs</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-python-ds.png">
+          <div class="cert-icon dev">🐍</div>
+          <h4>Python for Data Science</h4>
+          <div class="cert-issuer">Reliance Foundation Skilling Academy</div>
+          <div class="cert-date">🗓 Apr 2026 · 180 hrs</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-spd.png">
+          <div class="cert-icon dev">💻</div>
+          <h4>Software Product Developer</h4>
+          <div class="cert-issuer">NASSCOM · Skill India Digital Hub</div>
+          <div class="cert-date">🗓 May 2026 · Participation</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-tata.png">
+          <div class="cert-icon data">🤖</div>
+          <h4>GenAI Powered Data Analytics</h4>
+          <div class="cert-issuer">Tata Group · Forage</div>
+          <div class="cert-date">🗓 Jul 2025 · Simulation</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-accenture.png">
+          <div class="cert-icon dev">🏗️</div>
+          <h4>Software Engineering</h4>
+          <div class="cert-issuer">Accenture · Forage</div>
+          <div class="cert-date">🗓 Jul 2025 · Simulation</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-aws.png">
+          <div class="cert-icon dev">☁️</div>
+          <h4>Solutions Architecture</h4>
+          <div class="cert-issuer">AWS · Forage</div>
+          <div class="cert-date">🗓 Jul 2025 · Simulation</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-deloitte-tech.png">
+          <div class="cert-icon dev">⚙️</div>
+          <h4>Technology Job Simulation</h4>
+          <div class="cert-issuer">Deloitte Australia · Forage</div>
+          <div class="cert-date">🗓 Jul 2025 · Simulation</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+        <div class="cert-card" data-cert-img="assets/certs/cert-deloitte-data.png">
+          <div class="cert-icon data">🔎</div>
+          <h4>Data Analytics Job Simulation</h4>
+          <div class="cert-issuer">Deloitte Australia · Forage</div>
+          <div class="cert-date">🗓 Jun–Jul 2025 · Simulation</div>
+          <div class="cert-view">🔍 View Certificate</div>
+        </div>
+
+      </div>
+      <div class="scroll-arrow left">‹</div>
+      <div class="scroll-arrow">›</div>
+    </div>
+  </div>
+</section>
+
+<section id="education" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap reveal">
+    <div class="eyebrow">06 — Education</div>
+    <div class="section-head"><h2>Academic background</h2></div>
+    <div>
+      <div class="edu-item">
+        <div><h4>Bachelor of Engineering — Information Technology</h4><div class="school">Theem College of Engineering, Boisar · University of Mumbai</div></div>
+        <div class="date">Jan '22 – Present</div>
+      </div>
+      <div class="edu-item">
+        <div><h4>Higher Secondary Certificate (12th) — Science</h4><div class="school">Samarth Group of Institution, Belhe · Maharashtra State Board</div></div>
+        <div class="date">Jan '20 – Dec '22</div>
+      </div>
+      <div class="edu-item">
+        <div><h4>Secondary School Certificate (10th)</h4><div class="school">Shree Narayana Guru Marathi Vidyalaya, Chembur · Maharashtra State Board</div></div>
+        <div class="date">Jan '20 – Dec '20</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="contact-box">
+      <h2>Let's build something.</h2>
+      <p>Open to internships and entry-level roles across data science, analytics, and full-stack development.</p>
+      <div class="contact-links">
+        <a href="mailto:smartarjun045@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="tel:+917620675207" class="btn btn-ghost">Call</a>
+        <a href="https://github.com/smartarjun045" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-ghost" id="linkedinLink2">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Arjun Baban Dongare · Chembur, Maharashtra, India</div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <div class="lightbox-close" id="lightboxClose">✕</div>
+    <img id="lightboxImg" src="" alt="Certificate">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
