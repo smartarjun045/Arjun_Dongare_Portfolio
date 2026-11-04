@@ -26,7 +26,7 @@ The production site is generated in `dist/`. Vercel configuration is included. T
 - Mobile navigation and responsive layouts from 360px through desktop.
 - A pointer-responsive 3D torus rendered with Canvas, capped at approximately 30 frames per second.
 - Motion pause control, persisted preference, system reduced-motion support, offscreen and background-tab pausing.
-- Eight projects, category filters, live website previews and expandable case studies.
+- Nine projects, category filters, live website previews and expandable case studies.
 - Full-stack and data-science resume links.
 - Ten certificate links, including the original Simplilearn Full Stack Java PDF.
 - Semantic sections, visible keyboard focus, skip link and print styling.
