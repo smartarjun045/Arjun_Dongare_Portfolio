@@ -1799,3 +1799,16 @@ footer>a:last-child {
   .research-card .project-status { grid-column: 2; }
   .project-card .project-content > p { font-size: 13px; }
 }
+
+/* Balanced cross-domain toolkit, with shared tools first. */
+.stack-strip .wrap.toolkit-rows { display: grid; gap: 0; padding-block: 10px; }
+.toolkit-row { display: grid; grid-template-columns: 195px 1fr; align-items: center; gap: 24px; padding-block: 19px; }
+.toolkit-row + .toolkit-row { border-top: 1px solid var(--line); }
+.toolkit-tools { display: flex; flex-wrap: wrap; gap: 18px 38px; }
+.toolkit-row:first-child .toolkit-tools span { color: var(--accent); }
+@media (max-width: 760px) {
+  .toolkit-row { grid-template-columns: 1fr; gap: 13px; padding-block: 19px; }
+  .toolkit-tools { gap: 12px 24px; }
+  .stack-strip .toolkit-row .strip-title { font-size: 9px; }
+  .stack-strip .toolkit-tools span { font-size: 14px; }
+}
