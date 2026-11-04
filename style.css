@@ -1763,3 +1763,20 @@ footer>a:last-child {
     font-size:18px
   }
 }
+
+/* Featured storefront bridges the web projects and data explorations. */
+.neyo-feature { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+.neyo-feature .project-image { background: #3b3038; }
+.neyo-feature .project-heading { margin-top: 0; }
+.neyo-feature .project-content > p { font-size: 14px; line-height: 1.75; }
+@media (max-width: 760px) {
+  .neyo-feature { display: block; }
+  .neyo-feature .project-heading { margin-top: 20px; }
+  .neyo-feature .project-content > p { font-size: 13px; }
+}
+@media print { .neyo-feature { display: block; } }
+
+/* Full-name branding in both navigation and footer. */
+.site-header .wordmark, footer .wordmark { font-size: 21px; letter-spacing: -.7px; white-space: nowrap; }
+@media (max-width: 760px) { .site-header .wordmark, footer .wordmark { font-size: 17px; letter-spacing: -.5px; } .site-header { gap: 12px; } }
+@media (max-width: 374px) { .site-header .wordmark { font-size: 15px; } .site-header { gap: 9px; } .nav-cta { padding-inline: 10px; gap: 10px; } }
