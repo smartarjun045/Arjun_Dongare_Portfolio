@@ -1,0 +1,8 @@
+{
+  "name": "arjun-dongare-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "An accessible, lightweight developer portfolio",
+  "scripts": { "dev": "node scripts/serve.mjs", "build": "node scripts/build.mjs", "check": "node --check script.js" },
+  "engines": { "node": ">=22" }
+}

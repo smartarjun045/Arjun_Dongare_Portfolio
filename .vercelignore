@@ -1,0 +1,6 @@
+.audit/
+.git/
+node_modules/
+dist/
+profile.png
+.env*

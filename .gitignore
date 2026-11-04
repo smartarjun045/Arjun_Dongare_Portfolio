@@ -1,0 +1,7 @@
+.audit/
+node_modules/
+dist/
+.vercel/
+
+.vercel
+.env*.local
