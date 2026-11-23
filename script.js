@@ -18,15 +18,54 @@
   }));
 
   const copy = document.getElementById('copy-email');
+  const dockCopy = document.getElementById('dock-copy');
+  const toast = document.getElementById('watermelon-toast');
   let copyTimer;
-  copy.addEventListener('click', async () => {
+  let toastTimer;
+
+  async function copyEmailHandler() {
+    let success = false;
     try {
       await navigator.clipboard.writeText('smartarjun045@gmail.com');
-      copy.textContent = 'Copied!';
-      document.getElementById('copy-status').textContent = 'Email address copied to clipboard.';
-      clearTimeout(copyTimer); copyTimer = setTimeout(() => { copy.textContent = 'Copy email'; }, 2500);
-    } catch { document.getElementById('copy-status').textContent = 'Unable to copy. Select the email address, or use the email link to open your mail app.'; copy.textContent = 'Select email to copy'; }
-  });
+      success = true;
+    } catch {
+      try {
+        const input = document.createElement('textarea');
+        input.value = 'smartarjun045@gmail.com';
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        document.body.appendChild(input);
+        input.focus();
+        input.select();
+        success = document.execCommand('copy');
+        document.body.removeChild(input);
+      } catch {
+        success = false;
+      }
+    }
+
+    if (copy) copy.textContent = success ? 'Copied!' : 'smartarjun045@gmail.com';
+    if (dockCopy) dockCopy.classList.toggle('copied', success);
+    const copyStatus = document.getElementById('copy-status');
+    if (copyStatus) copyStatus.textContent = success ? 'Email address copied to clipboard.' : 'Email: smartarjun045@gmail.com';
+
+    if (toast) {
+      toast.querySelector('.toast-title').textContent = success ? 'Copied To Clipboard' : 'Email Address';
+      toast.querySelector('.toast-desc').textContent = 'smartarjun045@gmail.com';
+      toast.classList.add('visible');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { toast.classList.remove('visible'); }, 3200);
+    }
+
+    clearTimeout(copyTimer);
+    copyTimer = setTimeout(() => {
+      if (copy) copy.textContent = 'Copy Email';
+      if (dockCopy) dockCopy.classList.remove('copied');
+    }, 2500);
+  }
+
+  if (copy) copy.addEventListener('click', copyEmailHandler);
+  if (dockCopy) dockCopy.addEventListener('click', copyEmailHandler);
   document.getElementById('year').textContent = String(new Date().getFullYear());
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -40,7 +79,7 @@
     paused = userPaused || reducedMotion.matches;
     document.body.classList.toggle('motion-paused', paused);
     motionButton.setAttribute('aria-pressed', String(paused));
-    motionButton.innerHTML = paused ? 'Motion paused <span aria-hidden="true">▷</span>' : 'Pause motion <span aria-hidden="true">Ⅱ</span>';
+    motionButton.innerHTML = paused ? 'Motion Paused <span aria-hidden="true">▷</span>' : 'Pause Motion <span aria-hidden="true">Ⅱ</span>';
     motionButton.disabled = reducedMotion.matches;
     motionButton.title = reducedMotion.matches ? 'Reduced motion is enabled in your device settings' : 'Toggle the animated 3D sculpture';
     if (paused) renderStatic(); else startAnimation();
@@ -93,13 +132,22 @@
     for (let i = 0; i < projected.length; i++) {
       const p = projected[i];
       const brightness = (p.z + 2) / 4;
-      const opacity = .16 + brightness * .72;
-      context.fillStyle = `rgba(${Math.round(172 + brightness * 73)},${Math.round(104 + brightness * 69)},${Math.round(67 + brightness * 61)},${opacity})`;
-      context.beginPath(); context.arc(p.x, p.y, (p.band ? 1.1 : .7) * p.size, 0, Math.PI * 2); context.fill();
+      const opacity = .28 + brightness * .72;
+      if (p.band) {
+        context.fillStyle = `rgba(2, 132, 199, ${Math.min(1, opacity + 0.25)})`;
+      } else {
+        const r = Math.round(15 + brightness * 20);
+        const g = Math.round(65 + brightness * 85);
+        const b = Math.round(120 + brightness * 105);
+        context.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
+      }
+      context.beginPath(); 
+      context.arc(p.x, p.y, (p.band ? 1.3 : 0.85) * p.size, 0, Math.PI * 2); 
+      context.fill();
     }
-    context.strokeStyle = '#b58b6925'; context.lineWidth = .7;
+    context.strokeStyle = 'rgba(2, 132, 199, 0.28)'; context.lineWidth = .8;
     context.beginPath(); context.ellipse(width/2, height/2, Math.min(width,height)*.44, Math.min(width,height)*.38, -.5, 0, Math.PI*2); context.stroke();
-    context.fillStyle = '#e9a17b'; context.beginPath(); context.arc(width*.8,height*.2,2,0,Math.PI*2); context.fill();
+    context.fillStyle = '#0284c7'; context.beginPath(); context.arc(width*.8,height*.2,2.5,0,Math.PI*2); context.fill();
   }
   function resize() { const rect = canvas.getBoundingClientRect(); width = rect.width; height = rect.height; const dpr = Math.min(window.devicePixelRatio || 1, 2); canvas.width = Math.round(width*dpr); canvas.height = Math.round(height*dpr); context.setTransform(dpr,0,0,dpr,0,0); draw(); }
   function frame(time) {
@@ -120,5 +168,38 @@
     window.requestIdleCallback(() => { resize(); updateMotion(); }, { timeout: 1000 });
   } else {
     setTimeout(() => { resize(); updateMotion(); }, 50);
+  }
+
+  // Watermelon UI: Card Spotlight cursor tracking
+  const spotlightCards = document.querySelectorAll('.project-card, .skill-column');
+  spotlightCards.forEach(card => {
+    card.addEventListener('pointermove', event => {
+      if (event.pointerType === 'touch') return;
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--mouse-x', `${event.clientX - rect.left}px`);
+      card.style.setProperty('--mouse-y', `${event.clientY - rect.top}px`);
+    }, { passive: true });
+  });
+
+  // Watermelon UI: Dock Scroll Spy
+  const dock = document.querySelector('.watermelon-dock');
+  const dockItems = document.querySelectorAll('.dock-item[data-dock]');
+  if (dock && dockItems.length) {
+    const sections = ['home', 'projects', 'services', 'about', 'experience', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+    function updateDockActive() {
+      const scrollPos = window.scrollY + window.innerHeight * 0.35;
+      let currentId = 'home';
+      for (const section of sections) {
+        if (section.offsetTop <= scrollPos) {
+          currentId = section.id;
+        }
+      }
+      dockItems.forEach(item => {
+        const matches = item.dataset.dock === currentId;
+        item.classList.toggle('active', matches);
+      });
+    }
+    window.addEventListener('scroll', updateDockActive, { passive: true });
+    updateDockActive();
   }
 })();
