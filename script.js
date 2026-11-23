@@ -61,12 +61,14 @@
   let width = 0, height = 0, phase = 0, lastFrame = 0, raf = 0, inView = true;
   let pointerX = 0, pointerY = 0, currentX = 0, currentY = 0;
   const points = [];
-  for (let ring = 0; ring < 100; ring++) {
-    const u = ring / 100 * Math.PI * 2;
-    for (let tube = 0; tube < 34; tube++) {
-      const v = tube / 34 * Math.PI * 2;
+  const projected = [];
+  for (let ring = 0; ring < 64; ring++) {
+    const u = ring / 64 * Math.PI * 2;
+    for (let tube = 0; tube < 24; tube++) {
+      const v = tube / 24 * Math.PI * 2;
       const radius = 1.35 + .54 * Math.cos(v);
       points.push({ x: radius * Math.cos(u), y: radius * Math.sin(u), z: .54 * Math.sin(v), band: tube % 3 === 0 });
+      projected.push({ x: 0, y: 0, z: 0, band: tube % 3 === 0, size: 1 });
     }
   }
   function draw() {
@@ -74,14 +76,22 @@
     const rx = .85 + currentY * .3, ry = -.35 + currentX * .35, rz = -.48 + phase;
     const sx = Math.sin(rx), cx = Math.cos(rx), sy = Math.sin(ry), cy = Math.cos(ry), sz = Math.sin(rz), cz = Math.cos(rz);
     const scale = Math.min(width, height) * .225;
-    const projected = points.map(p => {
+    for (let i = 0; i < points.length; i++) {
+      const p = points[i];
       const x1 = p.x * cz - p.y * sz, y1 = p.x * sz + p.y * cz;
       const y2 = y1 * cx - p.z * sx, z2 = y1 * sx + p.z * cx;
       const x3 = x1 * cy + z2 * sy, z3 = -x1 * sy + z2 * cy;
       const perspective = 5 / (5 - z3);
-      return { x: width / 2 + x3 * scale * perspective, y: height / 2 + y2 * scale * perspective, z: z3, band: p.band, size: perspective };
-    }).sort((a,b) => a.z - b.z);
-    for (const p of projected) {
+      const proj = projected[i];
+      proj.x = width / 2 + x3 * scale * perspective;
+      proj.y = height / 2 + y2 * scale * perspective;
+      proj.z = z3;
+      proj.band = p.band;
+      proj.size = perspective;
+    }
+    projected.sort((a,b) => a.z - b.z);
+    for (let i = 0; i < projected.length; i++) {
+      const p = projected[i];
       const brightness = (p.z + 2) / 4;
       const opacity = .16 + brightness * .72;
       context.fillStyle = `rgba(${Math.round(172 + brightness * 73)},${Math.round(104 + brightness * 69)},${Math.round(67 + brightness * 61)},${opacity})`;
@@ -106,5 +116,9 @@
   if ('IntersectionObserver' in window) new IntersectionObserver(entries => { inView = entries[0].isIntersecting; if (inView) startAnimation(); else { cancelAnimationFrame(raf); raf=0; } }).observe(canvas);
   document.addEventListener('visibilitychange', () => { if (document.hidden) { cancelAnimationFrame(raf); raf=0; } else startAnimation(); });
   if (window.matchMedia('(pointer: coarse)').matches) document.querySelector('.interaction-hint').textContent = 'A STUDY IN FORM & MOTION';
-  resize(); updateMotion();
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(() => { resize(); updateMotion(); }, { timeout: 1000 });
+  } else {
+    setTimeout(() => { resize(); updateMotion(); }, 50);
+  }
 })();
