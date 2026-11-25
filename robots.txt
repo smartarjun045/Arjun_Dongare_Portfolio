@@ -1,6 +1,13 @@
 User-agent: *
 Allow: /
 
+# Major Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 # AI Search & LLM Crawlers (Welcome to read /llms.txt & /llms-full.txt)
 User-agent: GPTBot
 Allow: /
@@ -14,10 +21,22 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: DuckDuckBot
 Allow: /
 
 Sitemap: https://arjun-dongare-portfolio.vercel.app/sitemap.xml

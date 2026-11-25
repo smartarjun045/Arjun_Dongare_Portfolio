@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#151718">
+    <title>Data Science & Data Analysis Services | Arjun Dongare</title>
+    <meta name="description"
+        content="Explore data science, exploratory data analysis (EDA), Tableau and Power BI dashboards, machine learning and computer vision projects by Arjun Dongare.">
+    <link rel="canonical" href="https://arjun-dongare-portfolio.vercel.app/data-science-and-analysis/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arjun-dongare-portfolio.vercel.app/data-science-and-analysis/">
+    <meta property="og:title" content="Data Science & Data Analysis Services | Arjun Dongare">
+    <meta property="og:description"
+        content="Explore data science, exploratory data analysis (EDA), Tableau and Power BI dashboards, machine learning and computer vision projects by Arjun Dongare.">
+    <meta property="og:image" content="https://arjun-dongare-portfolio.vercel.app/assets/social-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="text/plain" title="LLMs Information" href="/llms.txt">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #07080a;
+            --panel: rgba(18, 21, 31, 0.7);
+            --text: #ffffff;
+            --muted: #94a3b8;
+            --accent: #ffffff;
+            --line: rgba(255, 255, 255, 0.08)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.032) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.032) 1px, transparent 1px);
+            background-size: 40px 40px;
+            color: var(--text);
+            font: 16px/1.7 Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif
+        }
+
+        a {
+            color: inherit
+        }
+
+        a:hover {
+            color: #ffffff
+        }
+
+        .wrap {
+            width: min(1080px, calc(100% - 40px));
+            margin: auto
+        }
+
+        .top {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center
+        }
+
+        .brand {
+            text-decoration: none;
+            font-weight: 800;
+            letter-spacing: .08em;
+            color: #ffffff
+        }
+
+        .brand span {
+            color: #a1a1aa
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap
+        }
+
+        nav a,
+        .back {
+            font-size: 14px;
+            color: var(--muted);
+            text-decoration: none
+        }
+
+        .hero {
+            padding: 76px 0 48px
+        }
+
+        .eyebrow {
+            color: var(--muted);
+            font-size: 12px;
+            letter-spacing: .16em;
+            text-transform: uppercase
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 70px);
+            line-height: 1.05;
+            letter-spacing: -.04em;
+            max-width: 850px;
+            margin: 16px 0;
+            color: #ffffff
+        }
+
+        .hero p {
+            max-width: 760px;
+            color: var(--muted);
+            font-size: 18px
+        }
+
+        .actions {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 28px
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            text-decoration: none;
+            border-radius: 9999px;
+            font-size: 13px;
+            transition: all .2s
+        }
+
+        .button:hover {
+            border-color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-1px)
+        }
+
+        .button.primary {
+            background: #ffffff;
+            color: #090a0c;
+            border-color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 4px 18px rgba(255, 255, 255, 0.18)
+        }
+
+        .button.primary:hover {
+            background: #e2e8f0;
+            color: #090a0c
+        }
+
+        .section {
+            padding: 38px 0 64px
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #ffffff
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px
+        }
+
+        .card {
+            background: #0d0f15;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5)
+        }
+
+        .card h2,
+        .card h3 {
+            margin-top: 0;
+            color: #ffffff
+        }
+
+        .card p,
+        li {
+            color: var(--muted)
+        }
+
+        ul {
+            padding-left: 20px
+        }
+
+        .note {
+            border-left: 2px solid #ffffff;
+            padding: 12px 18px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 0 8px 8px 0;
+            color: var(--muted)
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 24px 0;
+            color: var(--muted);
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap
+        }
+    </style>
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Data Science & Data Analysis Services | Arjun Dongare","description":"Explore data science, exploratory data analysis (EDA), Tableau and Power BI dashboards, machine learning and computer vision projects by Arjun Dongare.","url":"https://arjun-dongare-portfolio.vercel.app/data-science-and-analysis/","author":{"@type":"Person","name":"Arjun Baban Dongare","url":"https://arjun-dongare-portfolio.vercel.app/"}}</script>
+</head>
+
+<body>
+    <header class="wrap top"><a class="brand" href="/">ARJUN DONGARE<span>.</span></a>
+        <nav aria-label="Main navigation"><a href="/#projects">Work</a><a href="/#services">Services</a><a
+                href="/#about">About</a><a href="/#contact">Contact</a></nav>
+    </header>
+    <main class="wrap">
+        <p class="back"><a href="/">Home</a> / Data Science & Data Analysis Solutions</p>
+        <section class="hero">
+            <p class="eyebrow">DATA & AI / DATA SCIENCE & DATA ANALYSIS</p>
+            <h1>Data Science & Data Analysis Solutions</h1>
+            <p>I transform raw datasets into structured insights, interactive dashboards and predictive workflows —
+                combining Python, SQL, statistical exploration and computer vision with practical web delivery.</p>
+            <div class="actions"><a class="button primary" href="/#contact">Discuss A Project ↗</a><a class="button"
+                    href="https://www.fiverr.com/s/9dGl4XY" target="_blank" rel="noopener noreferrer">Hire On Fiverr
+                    ↗</a><a class="button" href="/#projects">View Portfolio</a></div>
+        </section>
+        <section class="section">
+            <div class="grid">
+                <article class="card">
+                    <h2>Exploratory Data Analysis</h2>
+                    <p>Data cleaning, wrangling and statistical exploration using Python and SQL to identify missing
+                        patterns, anomalies and key business drivers.</p>
+                </article>
+                <article class="card">
+                    <h2>BI Dashboards & Reporting</h2>
+                    <p>Interactive visualizations in Tableau and Power BI paired with Excel classification workflows and
+                        clear business storytelling for decision-makers.</p>
+                </article>
+                <article class="card">
+                    <h2>Predictive Machine Learning</h2>
+                    <p>Supervised modeling workflows explored across financial transaction classification, stock
+                        analytics and delinquency risk profiling.</p>
+                </article>
+                <article class="card">
+                    <h2>Computer Vision & Flask Apps</h2>
+                    <p>Real-time visual tracking and CNN models built with TensorFlow and OpenCV, plus Flask
+                        dashboards combining NLP sentiment and tracking.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Relevant Portfolio Projects</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Sign Language To Text & Speech</h3>
+                    <p>Real-time ASL fingerspelling recognition combining Python, OpenCV hand tracking, a TensorFlow CNN
+                        model and speech synthesis.</p><a
+                        href="https://github.com/smartarjun045/Sign-Language-To-Text-and-Speech-Conversion"
+                        target="_blank" rel="noopener noreferrer">Explore Repository ↗</a>
+                </article>
+                <article class="card">
+                    <h3>UPI Fraud Detection</h3>
+                    <p>Machine learning exploration identifying behavioral patterns in transaction datasets to flag
+                        potentially fraudulent UPI activity.</p><a
+                        href="https://github.com/smartarjun045/UPI-Fraud-Detection-Using-Machine-Learning"
+                        target="_blank" rel="noopener noreferrer">Explore Repository ↗</a>
+                </article>
+                <article class="card">
+                    <h3>Stock Price Prediction</h3>
+                    <p>Flask web application combining stock analytics, news sentiment analysis (NLP) and portfolio
+                        tracking in a single dashboard.</p><a
+                        href="https://github.com/smartarjun045/STOCK_PRICE_PREDICTION" target="_blank"
+                        rel="noopener noreferrer">Explore Repository ↗</a>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <h2>How A Data Project Works</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>1. Clean & Explore</h3>
+                    <p>Audit raw data, resolve formatting issues and uncover baseline trends with Python, SQL or Excel.</p>
+                </article>
+                <article class="card">
+                    <h3>2. Model & Visualize</h3>
+                    <p>Build interactive Tableau or Power BI dashboards, train baseline ML models or apply structured
+                        analytics workflows.</p>
+                </article>
+                <article class="card">
+                    <h3>3. Report & Deliver</h3>
+                    <p>Deliver clean visualizations, documented notebooks or Flask dashboards ready for stakeholder
+                        review.</p>
+                </article>
+            </div>
+        </section>
+        <p class="note">Project scope, timelines and deliverables depend on dataset availability and requirements.
+            Forage job simulations (Deloitte Australia, Tata Group) and YuvaIntern training represent structured learning
+            experiences rather than formal employment.</p>
+    </main>
+    <footer class="wrap"><span>© 2026 Arjun Dongare · Mumbai, India</span><a class="back" href="/">Back To Portfolio
+            ↑</a></footer>
+</body>
+
+</html>

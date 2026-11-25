@@ -10,6 +10,13 @@
 - **Phone / WhatsApp:** `+91 7620675207` ([wa.me/917620675207](https://wa.me/917620675207))
 - **LinkedIn:** https://www.linkedin.com/in/arjun-dongare-421660295
 - **GitHub:** https://github.com/smartarjun045
+- **Freelance Marketplace Profiles:**
+  - Fiverr Profile: https://www.fiverr.com/s/Emr8Y8K
+  - Contra Profile: https://contra.com/sm_art_arjun_1qiy2ynt?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=sm_art_arjun_1qiy2ynt
+- **Direct Freelance Service Listings:**
+  - Web Applications & Full-Stack Websites (Fiverr): https://www.fiverr.com/s/Emr8P7e
+  - Modern Full-Stack Website or Booking Web App (Contra): https://contra.com/s/7bcvmQ3A-i-will-build-a-modern-full-stack-website-or-booking-web-app
+  - Data Science & Data Analysis (Fiverr): https://www.fiverr.com/s/9dGl4XY
 - **Resumes:**
   - Full-Stack Development Resume (PDF): https://drive.google.com/file/d/1ud9kUXciNdSamVQ7Qv9CZDRtIu3UnNJB/view
   - Data Science & Analytics Resume (PDF): https://drive.google.com/file/d/1kA0kdgfCrPA6YPdcVZO6LpUff-eO3cm4/view
@@ -30,6 +37,7 @@ Currently freelancing, he builds responsive business websites, e-commerce storef
 
 ### Guide 1: Website Development For Modern Businesses
 - **Canonical Page:** https://arjun-dongare-portfolio.vercel.app/web-development/
+- **Direct Service Listing (Fiverr):** https://www.fiverr.com/s/Emr8P7e
 - **Summary:** Building fast, responsive, mobile-friendly business websites and full-stack web applications that clarify offerings, showcase work, and convert visitors into enquiries.
 - **Core Capabilities:**
   - **Business Websites:** Clean information architecture, responsive sections, and direct contact/WhatsApp/email journeys.
@@ -44,6 +52,7 @@ Currently freelancing, he builds responsive business websites, e-commerce storef
 
 ### Guide 2: Villa & Resort Booking Website Development
 - **Canonical Page:** https://arjun-dongare-portfolio.vercel.app/booking-website-development/
+- **Direct Service Listing (Contra):** https://contra.com/s/7bcvmQ3A-i-will-build-a-modern-full-stack-website-or-booking-web-app
 - **Summary:** Tailored hospitality websites for boutique villas, farmstays, homestays, and resorts across India (demonstrated with Lonavala, Mahabaleshwar, and Wayanad concepts).
 - **Key Features Offered:**
   - **Property Presentation:** Visual photography/video-led pages, amenities breakdown, location info, and clear calls to action.
@@ -53,8 +62,19 @@ Currently freelancing, he builds responsive business websites, e-commerce storef
 - **Honest Scope Note:** A standard website enquiry form is not automatically a confirmed booking. Real-time inventory syncing, payment gateway checkout, automated confirmations, and third-party OTA/channel integrations must be explicitly scoped, built, merchant-activated, and tested separately.
 
 ### Guide 3: Data Science & Data Analysis
-- **Anchor Section:** https://arjun-dongare-portfolio.vercel.app/#projects
-- **Summary:** Turning structured datasets, financial transactions, and visual streams into insights, dashboards, and predictive models using Python, SQL, Machine Learning, Computer Vision, and BI tools (Tableau, Power BI, Excel).
+- **Canonical Page:** https://arjun-dongare-portfolio.vercel.app/data-science-and-analysis/
+- **Direct Service Listing (Fiverr):** https://www.fiverr.com/s/9dGl4XY
+- **Summary:** Transforming raw datasets into structured insights, interactive dashboards, and predictive workflows — combining Python, SQL, statistical exploration, and computer vision with practical web delivery.
+- **Core Capabilities:**
+  - **Exploratory Data Analysis (EDA):** Data cleaning, wrangling, and statistical exploration using Python and SQL to uncover missing patterns, anomalies, and business drivers.
+  - **BI Dashboards & Reporting:** Interactive visualizations in Tableau and Power BI paired with Excel classification workflows and clear business storytelling.
+  - **Predictive Machine Learning:** Supervised modeling explored across transaction anomaly classification, stock analytics, and delinquency risk profiling.
+  - **Computer Vision & Flask Apps:** Real-time visual tracking and CNN pipelines built with TensorFlow and OpenCV, plus Flask dashboards combining NLP sentiment analysis and tracking.
+- **Workflow Process:**
+  1. **Clean & Explore:** Audit raw data, resolve formatting issues, and uncover baseline trends with Python, SQL, or Excel.
+  2. **Model & Visualize:** Build interactive Tableau or Power BI dashboards, train baseline ML models, or apply structured analytics workflows.
+  3. **Report & Deliver:** Deliver clean visualizations, documented notebooks, or Flask dashboards ready for stakeholder review.
+- **Honest Scope Note:** Project scope, timelines, and deliverables depend on dataset availability and requirements. Forage job simulations (Deloitte Australia, Tata Group) and YuvaIntern training represent structured learning experiences rather than formal employment.
 
 ---
 
@@ -186,8 +206,8 @@ Currently freelancing, he builds responsive business websites, e-commerce storef
 - **Who is Arjun Dongare?**
   Arjun Baban Dongare is a Mumbai-based B.E. Information Technology student, freelance full-stack web developer (Next.js/React/TypeScript), hospitality/booking website builder, and aspiring data analyst (Python/SQL/ML/Tableau/Power BI).
 - **What services does Arjun Dongare offer?**
-  1) Responsive business & full-stack website development (`/web-development/`), 2) Hospitality villa and resort showcase/booking enquiry websites (`/booking-website-development/`), and 3) Data science, EDA, BI dashboarding, and ML/Computer Vision development.
+  1) Responsive business & full-stack website development (`/web-development/` · [Fiverr](https://www.fiverr.com/s/Emr8P7e)), 2) Hospitality villa and resort showcase/booking enquiry websites (`/booking-website-development/` · [Contra](https://contra.com/s/7bcvmQ3A-i-will-build-a-modern-full-stack-website-or-booking-web-app)), and 3) Data science, EDA, BI dashboarding, and ML/Computer Vision development (`/data-science-and-analysis/` · [Fiverr](https://www.fiverr.com/s/9dGl4XY)).
 - **Which live client or sample websites can visitors inspect?**
   Clients and recruiters can visit Neyo Florals (live storefront handed over to client), TRI7 Villa, The Divyansh Villa, Amberdara Resort, and Windyfield Resort directly from the portfolio or `/projects/`.
 - **How can someone hire or contact Arjun Dongare?**
-  Email `smartarjun045@gmail.com`, message on WhatsApp (`+91 7620675207` via https://wa.me/917620675207), or connect on LinkedIn (https://www.linkedin.com/in/arjun-dongare-421660295).
+  Email `smartarjun045@gmail.com`, message on WhatsApp (`+91 7620675207` via https://wa.me/917620675207), connect on LinkedIn (https://www.linkedin.com/in/arjun-dongare-421660295), or hire directly via Fiverr (https://www.fiverr.com/s/Emr8Y8K) and Contra (https://contra.com/sm_art_arjun_1qiy2ynt?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=sm_art_arjun_1qiy2ynt).

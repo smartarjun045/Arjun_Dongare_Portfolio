@@ -1067,6 +1067,12 @@ details[open]>summary span {
   border:1px solid rgba(14,165,233,0.2);
   color:#0369a1
 }
+.service-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center
+}
 .service-card .text-link {
   font-size:12.5px;
   font-weight:600;
@@ -1082,7 +1088,14 @@ details[open]>summary span {
   width:fit-content;
   transition:all .25s ease
 }
-.service-card .text-link:hover {
+.service-card .text-link.hire-link {
+  color:#0369a1;
+  background:rgba(14,165,233,0.08);
+  border-color:rgba(14,165,233,0.28);
+  box-shadow:inset 0 1px 1px 0 rgba(255,255,255,0.9),0 2px 8px rgba(14,165,233,0.08)
+}
+.service-card .text-link:hover,
+.service-card .text-link.hire-link:hover {
   background:linear-gradient(180deg,#0284c7 0%,#0369a1 100%);
   color:#ffffff;
   border-color:#0284c7;
@@ -1187,6 +1200,15 @@ details[open]>summary span {
   font-size:11px;
   color:var(--muted);
   margin-top:5px
+}
+.about-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 24px;
+  align-items:center
+}
+.about-links .text-link:hover {
+  color:#0284c7
 }
 .skills-section {
   background:var(--bg-deep);
