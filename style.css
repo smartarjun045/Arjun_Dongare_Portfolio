@@ -1,13 +1,27 @@
+@font-face {
+  font-family:'Plus Jakarta Fallback';
+  src:local('Segoe UI'),local('Arial'),local('Helvetica Neue');
+  size-adjust:101%;
+  ascent-override:97%;
+  descent-override:25%
+}
+@font-face {
+  font-family:'Instrument Serif Fallback';
+  src:local('Georgia'),local('Times New Roman');
+  size-adjust:86%;
+  ascent-override:95%;
+  descent-override:22%
+}
 :root {
   --bg-deep:#f0f7ff;
   --bg-contrast:#e8f2fe;
-  --surface-card:rgba(255,255,255,0.88);
+  --surface-card:rgba(255,255,255,0.92);
   --surface-card-hover:rgba(255,255,255,0.98);
-  --surface-glass:rgba(255,255,255,0.82);
+  --surface-glass:rgba(255,255,255,0.86);
   --ink:#090d16;
   --ink-secondary:#334155;
-  --muted:#64748b;
-  --subtle:#94a3b8;
+  --muted:#475569;
+  --subtle:#475569;
   --line:rgba(14,165,233,0.16);
   --line-strong:rgba(14,165,233,0.28);
   --line-contrast:rgba(14,165,233,0.38);
@@ -16,7 +30,7 @@
   --green:#16a34a;
   --wrap:1240px;
   color-scheme:light;
-  font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+  font-family:'Plus Jakarta Sans','Plus Jakarta Fallback',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
   font-synthesis:none
 }
 * {
@@ -83,7 +97,7 @@ h1,h2,h3 {
   color:#090d16
 }
 em {
-  font-family:'Instrument Serif',Georgia,'Times New Roman',serif;
+  font-family:'Instrument Serif','Instrument Serif Fallback',Georgia,'Times New Roman',serif;
   font-style:italic;
   font-weight:400;
   background:linear-gradient(135deg,#0284c7 0%,#06b6d4 45%,#6366f1 90%);
@@ -646,9 +660,7 @@ h1 em {
   grid-column:span 3;
   min-width:0;
   position:relative;
-  background:linear-gradient(135deg,rgba(255,255,255,0.94) 0%,rgba(240,248,255,0.85) 100%);
-  backdrop-filter:blur(24px) saturate(180%);
-  -webkit-backdrop-filter:blur(24px) saturate(180%);
+  background:linear-gradient(135deg,rgba(255,255,255,0.97) 0%,rgba(240,248,255,0.94) 100%);
   border:1px solid rgba(255,255,255,0.9);
   border-radius:20px;
   padding:24px;
@@ -838,9 +850,7 @@ details[open]>summary span {
 }
 .research-card {
   grid-column:span 3;
-  background:linear-gradient(135deg,rgba(255,255,255,0.94) 0%,rgba(240,248,255,0.85) 100%);
-  backdrop-filter:blur(24px) saturate(180%);
-  -webkit-backdrop-filter:blur(24px) saturate(180%);
+  background:linear-gradient(135deg,rgba(255,255,255,0.97) 0%,rgba(240,248,255,0.94) 100%);
   border:1px solid rgba(255,255,255,0.9);
   border-radius:20px;
   padding:28px;
@@ -982,13 +992,11 @@ details[open]>summary span {
   padding-block:105px
 }
 .services-cards .service-card {
-  background:linear-gradient(135deg,rgba(255,255,255,0.96) 0%,rgba(240,248,255,0.88) 100%);
+  background:linear-gradient(135deg,rgba(255,255,255,0.98) 0%,rgba(240,248,255,0.94) 100%);
   border:1px solid rgba(14,165,233,0.22);
   border-radius:20px;
   padding:38px 32px;
   box-shadow:inset 0 1.5px 1.5px 0 #ffffff,0 14px 34px rgba(15,23,42,0.06);
-  backdrop-filter:blur(20px) saturate(180%);
-  -webkit-backdrop-filter:blur(20px) saturate(180%);
   transition:transform .35s cubic-bezier(0.16,1,0.3,1),border-color .3s ease,box-shadow .35s ease;
   position:relative;
   overflow:hidden;
@@ -1384,13 +1392,11 @@ details[open]>summary span {
   align-items:center;
   justify-content:space-between;
   gap:20px;
-  background:linear-gradient(180deg,rgba(255,255,255,0.96) 0%,rgba(240,248,255,0.88) 100%);
+  background:linear-gradient(180deg,rgba(255,255,255,0.98) 0%,rgba(240,248,255,0.94) 100%);
   border:1px solid rgba(14,165,233,0.24);
   border-radius:14px;
   padding:18px 24px;
   box-shadow:inset 0 1.5px 1.5px 0 rgba(255,255,255,1),0 8px 24px rgba(14,165,233,0.1);
-  backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
   font-size:13.5px;
   font-weight:600;
   color:#0f172a;
@@ -2464,7 +2470,7 @@ details[open]>summary span {
 .toolkit-tools { display: flex; flex-wrap: wrap; gap: 14px 28px; }
 .toolkit-tools span { transition: color 0.2s ease, transform 0.2s ease; display: inline-block; }
 .toolkit-tools span:hover { color: #0284c7; transform: translateY(-1px); }
-.toolkit-row:first-child .toolkit-tools span { color: var(--accent); }
+.toolkit-row:first-child .toolkit-tools span { color: #0369a1; }
 @media (max-width: 760px) {
   .toolkit-row { grid-template-columns: 1fr; gap: 13px; padding-block: 19px; }
   .toolkit-tools { gap: 10px 20px; }
