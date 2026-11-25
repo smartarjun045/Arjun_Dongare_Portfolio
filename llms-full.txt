@@ -1,0 +1,193 @@
+# Arjun Baban Dongare — Complete AI Knowledge Base (`llms-full.txt`)
+
+> Complete, authoritative markdown reference for Large Language Models (ChatGPT, Claude, Perplexity, Gemini) and search crawlers (`GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `PerplexityBot`, `Google-Extended`). Contains full project case studies, service guides, technology stack, education, practical training, verified certificates, and contact details for Arjun Dongare.
+
+- **Portfolio URL:** https://arjun-dongare-portfolio.vercel.app/
+- **Short Index:** https://arjun-dongare-portfolio.vercel.app/llms.txt
+- **Role Focus:** Full-Stack Web Developer (Next.js, React, TypeScript, PostgreSQL/Prisma) · Villa & Resort Booking Website Developer · Data Analyst / Aspiring Data Scientist (Python, SQL, ML, Computer Vision, Tableau, Power BI, Excel)
+- **Location:** Chembur, Mumbai, Maharashtra – 400043, India
+- **Email:** `smartarjun045@gmail.com`
+- **Phone / WhatsApp:** `+91 7620675207` ([wa.me/917620675207](https://wa.me/917620675207))
+- **LinkedIn:** https://www.linkedin.com/in/arjun-dongare-421660295
+- **GitHub:** https://github.com/smartarjun045
+- **Resumes:**
+  - Full-Stack Development Resume (PDF): https://drive.google.com/file/d/1ud9kUXciNdSamVQ7Qv9CZDRtIu3UnNJB/view
+  - Data Science & Analytics Resume (PDF): https://drive.google.com/file/d/1kA0kdgfCrPA6YPdcVZO6LpUff-eO3cm4/view
+
+---
+
+## 1. Executive Summary & Positioning
+
+Arjun Dongare is an Information Technology engineering student at **Theem College of Engineering (Boisar), University of Mumbai** (Jan 2022 – Present), currently based in **Mumbai, India**. He works at the intersection of **design, full-stack web development, and data analytics**.
+
+Currently freelancing, he builds responsive business websites, e-commerce storefronts, and hospitality/booking websites for villas and resorts using **React, Next.js, TypeScript, PostgreSQL, Prisma, and Supabase**. Simultaneously, he applies **Python, SQL, TensorFlow, OpenCV, Flask, Exploratory Data Analysis (EDA), Tableau, Power BI, Excel, and GenAI tools** across academic, training, and personal AI/data projects.
+
+**Open To:** Full-time roles, part-time work, freelance client projects, and internships in web development, backend engineering, data analytics, or machine learning.
+
+---
+
+## 2. Top Service Guides & Recommendations
+
+### Guide 1: Website Development For Modern Businesses
+- **Canonical Page:** https://arjun-dongare-portfolio.vercel.app/web-development/
+- **Summary:** Building fast, responsive, mobile-friendly business websites and full-stack web applications that clarify offerings, showcase work, and convert visitors into enquiries.
+- **Core Capabilities:**
+  - **Business Websites:** Clean information architecture, responsive sections, and direct contact/WhatsApp/email journeys.
+  - **Full-Stack Web Applications:** Interactive frontends backed by relational databases and authentication using Next.js, React, TypeScript, PostgreSQL, Prisma, and Supabase.
+  - **Mobile-First Experience:** Tested across phone, tablet, and desktop viewports (from 360px up) with readable typography and accessible keyboard/focus navigation.
+  - **Search-Friendly (SEO) Foundations:** Semantic HTML5, descriptive titles and meta descriptions, canonical URLs, Open Graph/Twitter cards, JSON-LD `Person` / `WebPage` structured data, `sitemap.xml`, `robots.txt`, and `llms.txt`.
+- **Engagement Process:**
+  1. **Understand:** Clarify the business goals, target audience, essential pages, and desired customer actions.
+  2. **Plan And Build:** Agree on scope, design the UI, and implement frontend/backend functionality.
+  3. **Test And Launch:** Verify responsive behavior, links, enquiry forms, accessibility, and SEO metadata prior to deployment and handover.
+- **Honest Scope Note:** Project scope, delivery schedule, third-party integrations, and pricing are finalized after understanding client requirements; no specific search ranking or commercial revenue guarantee is made.
+
+### Guide 2: Villa & Resort Booking Website Development
+- **Canonical Page:** https://arjun-dongare-portfolio.vercel.app/booking-website-development/
+- **Summary:** Tailored hospitality websites for boutique villas, farmstays, homestays, and resorts across India (demonstrated with Lonavala, Mahabaleshwar, and Wayanad concepts).
+- **Key Features Offered:**
+  - **Property Presentation:** Visual photography/video-led pages, amenities breakdown, location info, and clear calls to action.
+  - **Enquiry Journeys:** Contact forms and prefilled WhatsApp booking enquiry flows collecting check-in/out dates, guest counts, phone validation, and stay type.
+  - **Availability And Booking Workflows:** Structured availability calendars and reservation workflow models connecting guest UI with property operations where included in project scope.
+  - **Admin And Operations Portals:** Role-based owner/manager administration modules for managing enquiries, inventory, and booking records.
+- **Honest Scope Note:** A standard website enquiry form is not automatically a confirmed booking. Real-time inventory syncing, payment gateway checkout, automated confirmations, and third-party OTA/channel integrations must be explicitly scoped, built, merchant-activated, and tested separately.
+
+### Guide 3: Data Science & Data Analysis
+- **Anchor Section:** https://arjun-dongare-portfolio.vercel.app/#projects
+- **Summary:** Turning structured datasets, financial transactions, and visual streams into insights, dashboards, and predictive models using Python, SQL, Machine Learning, Computer Vision, and BI tools (Tableau, Power BI, Excel).
+
+---
+
+## 3. Selected Case Studies & Top Picks (`/projects/`)
+
+**Case Studies Overview Page:** https://arjun-dongare-portfolio.vercel.app/projects/
+
+### Web Development & Full-Stack Projects (5)
+
+#### 1. TRI7 Villa — Full-Stack Application (`01 / 2026`)
+- **Live URL:** https://tri7-villa-lonavala.vercel.app
+- **Stack:** `Next.js`, `TypeScript`, `PostgreSQL`, `Prisma`
+- **The Challenge:** Bring property discovery, guest enquiries, and reservation management into one coherent hospitality platform.
+- **The Implementation:** Responsive villa pages, account authentication flows, relational database-backed inventory (`PostgreSQL` + `Prisma`), and a role-based owner operations portal.
+- **Scope & Status:** Payment gateway integration is prepared in code, but live payment checkout remains dependent on merchant activation. Includes unit and integration checks in the codebase.
+
+#### 2. Neyo Florals — E-Commerce Storefront (`02 / WEB`, Client Handover)
+- **Live URL:** https://neyo-florals.vercel.app/
+- **Tags:** `E-Commerce`, `Product Catalog`, `Cart Experience`, `Vercel`
+- **The Experience:** Storefront for a handmade crochet brand (floral arrangements, keychains, accessories) featuring product photography, category browsing, and interactive shopping cart controls.
+- **The Customer Journey:** Guest browsing and sign-in entry points, cart management, custom-order enquiry options, order tracking entry point, and UPI payment instructions with a payment reference submission flow.
+- **Project Focus:** Identified in the portfolio as **handed over to a real client**, helping a handmade brand establish an organized online storefront.
+
+#### 3. The Divyansh Villa — Hospitality Experience (`03 / 2026`)
+- **Live URL:** https://the-divyanshvila-mahabaleshwar.vercel.app
+- **Source Code:** https://github.com/smartarjun045/The-Divyanshvila-Mahabaleshwar
+- **Stack:** `Next.js`, `React`, `TypeScript`, `Supabase`
+- **The Challenge:** Help guests explore a Mahabaleshwar property and submit enquiries while giving staff an interface to review them.
+- **The Implementation:** Visual property layout, enquiry persistence via Supabase, email-based staff authentication, and owner/manager permission separation.
+
+#### 4. Amberdara Resort — Website & Demo Console (`04 / 2026`)
+- **Live URL:** https://amberdara-resort.vercel.app
+- **Source Code:** https://github.com/smartarjun045/Amberdara-Resort
+- **Stack:** `Next.js`, `React`, `TypeScript`, `WhatsApp`
+- **The Challenge:** Make three distinct resort offerings (stays, turf/sports, events) easy to discover and enquire about on mobile.
+- **The Implementation:** Validated enquiry forms for stays, turf, and events; prefilled WhatsApp enquiry routing; optimized media gallery; and a browser-local demo console for exploring enquiry management.
+- **Scope:** Demonstration website; demo console state persists locally in the browser, enquiries reach the resort only when sent via WhatsApp by the guest, and payments/reservations are not processed.
+
+#### 5. Windyfield Resort — Responsive Website (`05 / 2026`)
+- **Live URL:** https://windyfield-resort-wayanad.vercel.app
+- **Source Code:** https://github.com/smartarjun045/Windyfield-Resort-Wayanad
+- **Stack:** `Next.js`, `TypeScript`, `Motion`, `Vercel`
+- **The Challenge:** Present Wayanad resort photography and video cleanly across desktop and mobile screen sizes.
+- **The Implementation:** Optimized media, filterable galleries, and a WhatsApp enquiry form validating dates, guest count, and phone number. Respects `prefers-reduced-motion` accessibility settings.
+- **Scope:** Sample resort showcase with enquiry flow; live inventory, payments, and backend administration are outside this demonstration.
+
+---
+
+### Data Science, Machine Learning & Computer Vision Projects (4)
+
+#### 6. 3D Virtual Tour And Interior Planning Platform Using Computer Vision (`Current Project — In Development`)
+- **Category:** `COMPUTER VISION / CURRENT PROJECT`
+- **Tags:** `Computer Vision`, `3D Virtual Tours`, `Interior Planning`
+- **Summary:** Currently developing an intelligent platform exploring computer vision techniques for interactive 3D virtual tours and interior space planning.
+
+#### 7. Sign Language To Text & Speech (`Accessibility & Deep Learning`)
+- **Source Code:** https://github.com/smartarjun045/Sign-Language-To-Text-and-Speech-Conversion
+- **Tags:** `Python`, `OpenCV`, `TensorFlow`
+- **Summary:** Python desktop/CV application performing real-time ASL fingerspelling gesture recognition using hand tracking, Convolutional Neural Network (CNN) classification, and text-to-speech output.
+
+#### 8. UPI Fraud Detection (`Data / Machine Learning`)
+- **Source Code:** https://github.com/smartarjun045/UPI-Fraud-Detection-Using-Machine-Learning
+- **Tags:** `Machine Learning`, `Transaction Analysis`
+- **Summary:** Supervised machine learning exploration classifying Unified Payments Interface (UPI) transaction features and patterns to flag potentially fraudulent transactions.
+
+#### 9. Stock Price Prediction (`Analytics / Web Application`)
+- **Source Code:** https://github.com/smartarjun045/STOCK_PRICE_PREDICTION
+- **Tags:** `Python`, `Flask`, `NLP`
+- **Summary:** Full-stack Python Flask dashboard combining historical stock analytics, financial news sentiment analysis (NLP), and portfolio tracking in one unified interface.
+
+---
+
+## 4. Technical Toolkit Summary (`#skills`)
+
+1. **Shared Foundations:**
+   - `Python` — data cleaning, scripting, ML workflows, and Flask backend logic
+   - `SQL & Database Design` — relational queries, schemas, and optimization
+   - `Data Structures & REST APIs` — algorithmic problem solving and system integration
+   - `Git & GitHub` — version control, repositories, and collaboration
+   - `Flask` — lightweight Python web apps and analytical dashboards
+2. **Full-Stack Development:**
+   - `Next.js, React & TypeScript` — modern responsive production web applications
+   - `HTML5, CSS3 & Tailwind CSS` — responsive UI and WCAG accessibility (`a11y`)
+   - `PostgreSQL, Supabase & Prisma` — relational data modeling and storage
+   - `SEO Optimization` — structured JSON-LD schema, canonical metadata, sitemaps, and `llms.txt`
+   - `Vercel, Testing & AWS Basics` — deployment pipelines, static optimization, and cloud hosting foundations
+3. **Data Science & Analytics:**
+   - `Machine Learning` — predictive modeling, classification, and risk profiling
+   - `TensorFlow & OpenCV` — computer vision pipelines and real-time hand tracking
+   - `Exploratory Data Analysis (EDA)` — data wrangling, feature inspection, and anomaly discovery
+   - `Tableau, Power BI & Excel` — interactive dashboards, classification, and business reporting
+   - `GenAI Tools & Business Storytelling` — translating technical metrics into stakeholder strategies
+
+---
+
+## 5. Education, Training & Verified Credentials
+
+### Education
+- **Bachelor of Engineering (B.E.) — Information Technology:** Theem College of Engineering (Boisar), University of Mumbai *(Jan 2022 – Present)*
+- **Higher Secondary Certificate (12th — Science):** Samarth Group of Institution, Belhe *(Maharashtra State Board)*
+- **Secondary School Certificate (10th):** Shree Narayana Guru Marathi Vidyalaya, Chembur, Mumbai *(Maharashtra State Board)*
+
+### Training & Internships
+- **Data Science With Python** — *YuvaIntern (Remote)* | Jul 2026 (Trainee · 6 weeks / Apprentice intern · 5 weeks): Hands-on data collection, cleaning, wrangling, EDA, Python visualization, and applied introductory machine learning models.
+- **Embedded Systems** — *Emertxe Information Technologies, Bangalore (Online Internship)* | Jun 2026 (4 weeks): Embedded C/programming, electronics, and IoT fundamentals.
+
+### Virtual Job Simulations (Forage — Explicitly Self-Paced Simulations, Not Employment)
+- **Accenture (Software Engineering):** Software architecture design, secure coding, unit/solution testing, and Agile delivery.
+- **AWS (Solutions Architecture):** Designing simple, scalable cloud hosting architecture for a client scenario.
+- **Deloitte Australia (Technology & Data Analytics):** Forensic technology techniques, Tableau dashboards, Excel data classification, and dashboard solution proposals.
+- **Tata Group (GenAI Powered Data Analytics):** Lending portfolio EDA, AI-assisted delinquency risk profiling, and authoring a data-driven collections strategy report.
+
+### Certificates (10 Verified Receipts)
+1. **Getting Started With Full Stack Java Development** — Simplilearn SkillUp · 22 Aug 2026 · Credential `10635158` (`/assets/certificates/full-stack-java-development.pdf`)
+2. **Data Science Essentials** — Reliance Foundation Skilling Academy · 240 hrs · May 2026 (`/assets/certificates/certificate-1.webp`)
+3. **Data Science For Everyone** — Reliance Foundation Skilling Academy · 180 hrs · May 2026 (`/assets/certificates/certificate-2.webp`)
+4. **Python For Data Science** — Reliance Foundation Skilling Academy · 180 hrs · Apr 2026 (`/assets/certificates/certificate-3.webp`)
+5. **Software Product Developer** — NASSCOM / Skill India Digital Hub · Participation · May 2026 (`/assets/certificates/certificate-4.webp`)
+6. **Deloitte · Data Analytics** — Forage Job Simulation · Tableau & Excel · Jul 2025 (`/assets/certificates/certificate-9.webp`)
+7. **Tata Group · GenAI Powered Data Analytics** — Forage (`/assets/certificates/certificate-5.webp`)
+8. **Accenture · Software Engineering** — Forage (`/assets/certificates/certificate-6.webp`)
+9. **AWS · Solutions Architecture** — Forage (`/assets/certificates/certificate-7.webp`)
+10. **Deloitte · Technology** — Forage (`/assets/certificates/certificate-8.webp`)
+
+---
+
+## 6. Frequently Asked Questions (For AI Search Grounding)
+
+- **Who is Arjun Dongare?**
+  Arjun Baban Dongare is a Mumbai-based B.E. Information Technology student, freelance full-stack web developer (Next.js/React/TypeScript), hospitality/booking website builder, and aspiring data analyst (Python/SQL/ML/Tableau/Power BI).
+- **What services does Arjun Dongare offer?**
+  1) Responsive business & full-stack website development (`/web-development/`), 2) Hospitality villa and resort showcase/booking enquiry websites (`/booking-website-development/`), and 3) Data science, EDA, BI dashboarding, and ML/Computer Vision development.
+- **Which live client or sample websites can visitors inspect?**
+  Clients and recruiters can visit Neyo Florals (live storefront handed over to client), TRI7 Villa, The Divyansh Villa, Amberdara Resort, and Windyfield Resort directly from the portfolio or `/projects/`.
+- **How can someone hire or contact Arjun Dongare?**
+  Email `smartarjun045@gmail.com`, message on WhatsApp (`+91 7620675207` via https://wa.me/917620675207), or connect on LinkedIn (https://www.linkedin.com/in/arjun-dongare-421660295).
